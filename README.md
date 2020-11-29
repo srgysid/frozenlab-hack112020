@@ -57,7 +57,7 @@ vendor/                  папка содержит зависимые библ
 
 Для запуска потребуется:
 * среда python 3.6 с установленными библиотеками из requirements.txt (pip install -r requirements.txt)
-* модуль uwsgi сконфигурированный для запуска приложения из папкок ai-rosatom-ass и ai-rosatom-card
+* модуль uwsgi сконфигурированный для запуска приложения из папок ai-rosatom-ass и ai-rosatom-card
 * nginx настроенный на работу с модулем uwsgi
 
 
