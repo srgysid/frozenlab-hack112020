@@ -11,6 +11,24 @@ use yii\bootstrap4\Tabs;
 
 use common\models\Orders;
 
+$Js = <<<SCRIPT
+$(document).ready(function () {
+    $('#type-message-id').change(function() {
+        var type_message_id = $('#type-message-id').val();
+        console.log(type_message_id);
+        
+        if (type_message_id == 3){
+            $('#orders-short_desc').val('Комиссия по охране труда');
+            $('#orders-full_desc').val('Подготовить рабочие места к осмотру');
+        }
+        if (type_message_id == 1){
+            $('#orders-short_desc').val('Инструктаж персонала');
+            $('#orders-full_desc').val('Ответственным провести инструктаж персонала. Журналы под роспись');
+        }
+    });
+});
+SCRIPT;
+$this->registerJs($Js);
 
 $index = 0;
 $orderFileLink = [];
@@ -29,9 +47,6 @@ foreach ($uploadFiles as $file){
     $index++;
 }
 
-//echo '<pre>'.print_r($model->typeMessage->name, true).'</pre>';
-//echo '<pre>'.print_r($model->typeMessage->typeOrder->name, true).'</pre>';
-//echo '<pre>'.print_r($cards, true).'</pre>';
 //echo '<pre>'.print_r($cards2, true).'</pre>';
 
 ?>

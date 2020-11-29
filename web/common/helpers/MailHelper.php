@@ -28,7 +28,7 @@ class MailHelper
 
     protected static function getFrom()
     {
-        return ['HotLine@ra.ru' => 'Операторы Горячей линии ДИТ'];
+        return ['HotLine@ra.ru' => 'Операторы Горячей линии'];
     }
 
 }

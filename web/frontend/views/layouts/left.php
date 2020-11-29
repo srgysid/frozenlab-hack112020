@@ -50,12 +50,12 @@ $img_path_s = $appAsset->baseUrl.'/images/new_logo_2.png';
                 'icon' => 'file-alt',
                 'access' => ['rl_admin', 'rl_key_user', 'rl_view_user', 'rl_chief'],
             ],
-//            [
-//                'label' => '<span class="CTAs">Пункт 3</span>',
-//                'url' => '#',
-//                'icon' => 'tachometer-alt'
-//            ],
-
+            [
+                'label' => '<span class="CTAs">Ответы</span>',
+                'url' => ['/answers/index'],
+                'icon' => 'tachometer-alt',
+                'access' => ['rl_admin', 'rl_key_user', 'rl_view_user'],
+            ],
             [
                 'label' => '<span class="CTAs">Справочники</span>',
                 'url' => '#',

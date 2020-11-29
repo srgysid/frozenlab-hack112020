@@ -42,6 +42,11 @@ if ($user->can('rl_admin') or $user->can('rl_key_user') or $user->can('rl_chief'
                                     'linkOptions' => ['value'=> Url::to(['/orders/change-department', 'id' => $model['id']]), 'title' => 'Выбор нового подразделения','class'=>'modalButton'],
                                 ],
                                 [
+                                    'label' => 'Ответы исполнителей',
+                                    'url' => '/answers/index-order?orders_id='.$model['id'],
+                                ],
+
+                                [
                                     'label' => 'Просмотреть',
                                     'url' => '#',
                                     'linkOptions' => ['value'=> Url::to(['/orders/view', 'id' => $model['id']]), 'title' => 'Просмотр','class'=>'modalButton'],

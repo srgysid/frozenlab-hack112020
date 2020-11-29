@@ -339,7 +339,7 @@ class Orders extends \yii\db\ActiveRecord
             $arrPerformers = Card::getDataByDepartment($this->department_id);
             if ($arrPerformers){
                 foreach ($arrPerformers as $performer){
-                    $profiles = UserProfile::find()->where(['card_id' => $performer->id])->all();
+                    $profiles = UserProfile::find()->where(['card_id' => $performer['id']])->all();
                     if ($profiles) {
                         foreach ($profiles as $profile){
                             $user = User::findOne($profile->user_id);
@@ -366,6 +366,19 @@ class Orders extends \yii\db\ActiveRecord
                 }
             }
         }
+    }
+
+    public static function getOrdersList()
+    {
+        $out = new Query();
+        $out->addSelect([
+            'orders.id as id',
+            new Expression("CONCAT(orders.short_desc, ' (', card.secondname, ' ', card.firstname, ' ', card.thirdname , ' от ', CAST(orders.created_at as date) , ' ', CAST(orders.created_at as time) ,')') as description"),
+        ])->from('orders')
+            ->leftJoin('user_profile', 'user_profile.user_id = orders.creator_id')
+            ->leftJoin('card', 'card.id = user_profile.card_id')
+            ->orderBy(['created_at' => SORT_DESC]);
+        return $out->all();
     }
 
 }

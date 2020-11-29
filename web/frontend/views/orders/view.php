@@ -179,38 +179,6 @@ foreach ($modelOrdersPerformers as $performers) {
 
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <label class="control-label" for="creator_id">Создано</label>
-                <div class="row">
-                    <div class="col-md-8">
-                        <input type="text" id="creator_id" class="form-control"
-                               title="<?= ($model->creator_id) ? Html::encode($model->creator->userProfile->fullName) : "" ?>"
-                               value="<?= ($model->creator_id) ? Html::encode($model->creator->userProfile->fullName) : "" ?>" readonly>
-                    </div>
-                    <div class="col-md-4">
-                        <input type="text" id="created_at" class="form-control" readonly value="<?= Yii::$app->formatter->asDate($model->created_at).' '.Yii::$app->formatter->asTime($model->created_at, 'php:H:i')?>">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <label class="control-label" for="updater_id">Изменено</label>
-                <div class="row">
-                    <div class="col-md-8">
-                        <input type="text" id="updater_id" class="form-control"
-                               title="<?= ($model->updater_id) ? Html::encode($model->updater->userProfile->fullName) : "" ?>"
-                               value="<?= ($model->updater_id) ? Html::encode($model->updater->userProfile->fullName) : "" ?>" readonly>
-                    </div>
-                    <div class="col-md-4">
-                        <input type="text" id="updated_at" class="form-control" readonly value="<?= Yii::$app->formatter->asDatetime($model->updated_at)?>">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <?php
         $this->endBlock('filesData');
