@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/padding_big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/AppTheme.CaptionRegular"
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/AppTheme.TextSmall"
+            android:id="@+id/text_created_at"
+            android:layout_marginTop="@dimen/padding_tiny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/AppTheme.TextSmall"
+            android:id="@+id/text_planned_at"
+            android:layout_marginTop="@dimen/padding_tiny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/AppTheme.TextSmall"
+            android:id="@+id/text_finished_at"
+            android:layout_marginTop="@dimen/padding_tiny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.frozenlab.hack.custom.view.TextLabelledView
+            app:label="@string/type_card"
+            android:id="@+id/text_type_card"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.frozenlab.hack.custom.view.TextLabelledView
+            app:label="@string/type_performer"
+            android:id="@+id/text_type_performer"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.frozenlab.hack.custom.view.TextLabelledView
+            app:label="@string/priority"
+            android:id="@+id/text_priority"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.frozenlab.hack.custom.view.TextLabelledView
+            app:label="@string/department"
+            android:id="@+id/text_department"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

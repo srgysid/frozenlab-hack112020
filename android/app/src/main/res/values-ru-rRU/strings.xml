@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Хакатон 11.2020</string>
+    <string name="app_name">Центр</string>
 
     <!-- Formats -->
     <string name="format_date">dd.MM.yyyy</string>
+
+    <string name="template_created_at">Дата добавления: %1$s</string>
+    <string name="template_planned_at">Плановая дата завершения: %1$s</string>
+    <string name="template_finished_at">Фактическая дата завершения: %1$s</string>
+    <string name="template_type_card">Тип карточки: %1$s</string>
+    <string name="template_type_order">Вид поручения: %1$s</string>
+    <string name="template_type_message">Тип сообщения: %1$s</string>
+    <string name="template_type_performer">Тип исполнения: %1$s</string>
 
     <!-- Plurals -->
     <plurals name="template_locations_quantity">
@@ -60,7 +68,7 @@
     <string name="filters">Фильтры</string>
     <string name="about_application">О приложении</string>
     <string name="version">Версия</string>
-    <string name="login">Имя пользователя</string>
+    <string name="login">Логин</string>
     <string name="password">Пароль</string>
     <string name="sign_in">Войти</string>
     <string name="sign_out">Выйти</string>
@@ -141,5 +149,43 @@
     <string name="ask_restore_lost_connection">Неудалось подключиться к серверу. Повторить?</string>
     <string name="repeat">Повторить</string>
     <string name="ok">Ок</string>
+    <string name="hint_profile">Посмотреть свой профиль</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="notifications">Уведомления</string>
+    <string name="profile">Профиль</string>
+    <string name="issues_list">Список задач</string>
+    <string name="issues_list_all">Список всех задач</string>
+    <string name="tab_new">Новые</string>
+    <string name="tab_in">Личные</string>
+    <string name="tab_out">Назначенные</string>
+    <string name="hold_button_to_record">Удерживайте кнопку \"Микрофон\", чтобы записать распоряжение</string>
+    <string name="or_input_manually">или заполните его вручную</string>
+    <string name="create_order">Создать задачу</string>
+    <string name="performer">Исполнитель</string>
+    <string name="required_date">Требуемый срок исполнения</string>
+    <string name="actual_date">Фактический срок исполнения</string>
+    <string name="title">Заголовок</string>
+    <string name="priority">Важность/проритет</string>
+    <string name="type_order">Вид поручения</string>
+    <string name="comment">Комментарий</string>
+    <string name="back">Назад</string>
+    <string name="card_constant_periodic">Постоянные заявки</string>
+    <string name="card_message">Информационное сообщение</string>
+    <string name="card_instruction">Поручение</string>
+    <string name="performers_all">Общий</string>
+    <string name="performers_currents">Индивидувльный</string>
+    <string name="priority_most_important">Особо важный</string>
+    <string name="priority_high">Высокий</string>
+    <string name="priority_medium">Средний</string>
+    <string name="priority_low">Низкий</string>
+    <string name="type_performer">Тип исполнения</string>
+    <string name="label">Label</string>
+    <string name="type_card">Тип карточки</string>
+    <string name="type_message">Тип сообщения</string>
+    <string name="text_order">Текст вашей заявки</string>
+    <string name="your_order_classified">Ваше расплряжение было классифицировано как</string>
+    <string name="label_type_card">Тип карточки: </string>
+    <string name="label_type_order">Вид поручения: </string>
+    <string name="department">Подразделение</string>
 
 </resources>
